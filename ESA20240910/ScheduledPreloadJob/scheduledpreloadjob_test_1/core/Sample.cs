@@ -202,9 +202,7 @@ namespace AlibabaCloud.CodeSample
             // Init client
             ESA20240910Client esa20240910Client = CreateESA20240910Client();
             // Init resource
-            //resource_RatePlanInstance_ScheduledPreloadJob_test_1
             PurchaseRatePlanResponseBody ratePlanInstRespBody = await RatePlanInstAsync(esa20240910Client);
-            //resource_Site_ScheduledPreloadJob_test_1
             CreateSiteResponseBody siteRespBody = await SiteAsync(ratePlanInstRespBody, esa20240910Client);
             CreateScheduledPreloadJobResponseBody schedPreloadJobRespBody = await SchedPreloadJobAsync(siteRespBody, esa20240910Client);
             // destroy resource

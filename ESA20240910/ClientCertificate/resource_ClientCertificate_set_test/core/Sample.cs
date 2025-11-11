@@ -244,9 +244,7 @@ namespace AlibabaCloud.CodeSample
             // Init client
             ESA20240910Client esa20240910Client = CreateESA20240910Client();
             // Init resource
-            //resource_RatePlanInstance_ClientCertificate_set_test
             PurchaseRatePlanResponseBody ratePlanInstCltCertRespBody = await RatePlanInstCltCertAsync(esa20240910Client);
-            //resource_Site_ClientCerticificate_set_test
             CreateSiteResponseBody siteCltCertRespBody = await SiteCltCertAsync(ratePlanInstCltCertRespBody, esa20240910Client);
             CreateClientCertificateResponseBody cltCertRespBody = await CltCertAsync(siteCltCertRespBody, esa20240910Client);
             // update resource

@@ -259,9 +259,7 @@ namespace AlibabaCloud.CodeSample
             // Init client
             ESA20240910Client esa20240910Client = CreateESA20240910Client();
             // Init resource
-            //resource_HttpRequestHeaderModificationRule_test
             PurchaseRatePlanResponseBody ratePlanInstRespBody = await RatePlanInstAsync(esa20240910Client);
-            //resource_Site_HttpRequestHeaderModificationRule_test
             CreateSiteResponseBody siteRespBody = await SiteAsync(ratePlanInstRespBody, esa20240910Client);
             CreateHttpRequestHeaderModificationRuleResponseBody reqHdrModRuleRespBody = await ReqHdrModRuleAsync(siteRespBody, esa20240910Client);
             // update resource
